@@ -604,8 +604,8 @@ public class Messenger {
 			String decision = userIn.nextLine();
 			
 			if (decision.equalsIgnoreCase("y")) {
-				if (manager.addTripOffering(String.valueOf(tripNumber), date, scheduledStartTime, scheduledArrivalTime, driverName, String.valueOf(busID)) > 0) System.out.println("Trip Offering Deleted");
-				else System.out.println("Failed to delete Trip Offering");
+				if (manager.addTripOffering(String.valueOf(tripNumber), date, scheduledStartTime, scheduledArrivalTime, driverName, String.valueOf(busID)) > 0) System.out.println("Trip Offering Created");
+				else System.out.println("Failed to create Trip Offering");
 				
 				
 				validInput = true;
